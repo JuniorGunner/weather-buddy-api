@@ -22,10 +22,13 @@ def request_openweathermap(city_name):
         return {'message': 'Connection to the OpenWeatherMap API service failed'}, 503
 
     try:
-        weather = {
+        weather = {     
+            'min': response['main']['temp_min'],
+            'max': response['main']['temp_max'],
+            'avg': response['main']['temp'],
+            'feels_like': response['main']['feels_like'],
             'city': response['name'],
-            'temp': response['main']['temp'],
-            'weather': response['weather'][0]['description'].title()
+            'country': response['sys']['country']
         }
     except:
         return {'message': 'Weather not found'}, 404
