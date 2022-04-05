@@ -2,10 +2,6 @@
 
 <img align="right" width="120" src="img/devgrid.png">
 
-[![GitHub workflow status](https://img.shields.io/github/workflow/status/rarygc/weather-buddy-api/Flask%20CI?label=tests)](https://github.com/rarygc/weather-buddy-api/actions)
-[![GitHub release](https://img.shields.io/github/v/release/rarygc/weather-buddy-api?include_prereleases)](https://github.com/rarygc/weather-buddy-api/releases)
-[![GitHub license](https://img.shields.io/github/license/rarygc/weather-buddy-api)](https://github.com/rarygc/weather-buddy-api/blob/main/LICENSE)
-
 ## About this application
 
 An Rest API to perform weather requests with the OpenWeatherMap API, developed with the objective of fix the need raised by the initial challenge of the selection process for back-end developer of **[DevGrid](https://devgrid.co.uk)**.
@@ -17,7 +13,7 @@ To run this project in a simple way, it's necessary that you have **Docker** in 
 1. First, clone the remote application repository on your local machine:
 
  ```bash
- $ git clone https://github.com/rarygc/weather-buddy-api.git
+ $ git clone git@github.com:JuniorGunner/weather-buddy-api.git
  ```
 
 2. Then, access the application's base directory:
@@ -64,7 +60,7 @@ It's a small initial interface that returns a message of greetings. If you can s
 
 It's the main interface of the application. It's responsible for providing the Weather management functionality. From this interface, we can request the weather in cities.
 
-**GET** `http://localhost:5000/weather/{city_name}` *get a city weather*
+**GET** `http://localhost:5000/temperature/<city_name>` *get a city weather*
 
 - **Parameters**
 
@@ -93,7 +89,7 @@ It's the main interface of the application. It's responsible for providing the W
 
 - **Responses**
 
-  This is the result for `http://localhost:5000/weather` with `max = 4`:
+  This is the result for `http://localhost:5000/weather?max = 4`:
 
   ```json
   [
@@ -129,7 +125,7 @@ To configure your development environment, it's necessary that you have **Pipenv
 1. First, clone the remote application repository on your local machine:
 
  ```bash
- $ git clone https://github.com/rarygc/weather-buddy-api.git
+ $ git clone git@github.com:JuniorGunner/weather-buddy-api.git
  ```
 
 2. Them, access the application's base directory:
