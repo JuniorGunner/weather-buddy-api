@@ -68,13 +68,16 @@ It's the main interface of the application. It's responsible for providing the W
 
 - **Responses**
 
-  This is the result for `http://localhost:5000/temperature/Florianópolis`:
+  This is the result for `http://localhost:5000/temperature/Los Angeles`:
 
   ```json
   {
-    "city": "Florianópolis",
-    "temp": 26.02,
-    "weather": "Scattered Clouds"
+    "min": 17.76,
+    "max": 31.44,
+    "avg": 24.7,
+    "feels_like": 24.71,
+    "city": "Los Angeles",
+    "country": "US"
   }
   ```
   > Once requested, this city will be available for 5 minutes in cache.
@@ -93,27 +96,39 @@ It's the main interface of the application. It's responsible for providing the W
 
   ```json
   [
-    {
-      "city": "São Paulo",
-      "temp": 19.66,
-      "weather": "Light Rain"
-    },
-    {
-      "city": "Porto Alegre",
-      "temp": 24.28,
-      "weather": "Clear Sky"
-    },
-    {
-      "city": "Belo Horizonte",
-      "temp": 21,
-      "weather": "Clear Sky"
-    },
-    {
-      "city": "Florianópolis",
-      "temp": 25.4,
-      "weather": "Scattered Clouds"
-    }
-  ]
+  {
+    "min": 17.76,
+    "max": 31.44,
+    "avg": 24.7,
+    "feels_like": 24.71,
+    "city": "Los Angeles",
+    "country": "US"
+  },
+  {
+    "min": 25.02,
+    "max": 25.02,
+    "avg": 25.02,
+    "feels_like": 26.03,
+    "city": "Belém",
+    "country": "BR"
+  },
+  {
+    "min": 7.86,
+    "max": 12.82,
+    "avg": 10.02,
+    "feels_like": 8.54,
+    "city": "Toronto",
+    "country": "CA"
+  },
+  {
+    "min": 21.2,
+    "max": 23.03,
+    "avg": 21.66,
+    "feels_like": 22.28,
+    "city": "São Paulo",
+    "country": "BR"
+  }
+]
   ```
 
 ## For Developers
