@@ -95,39 +95,39 @@ It's the main interface of the application. It's responsible for providing the W
   This is the result for `http://localhost:5000/temperature?max=4`:
 
   ```json
-  [
-  {
-    "min": 17.76,
-    "max": 31.44,
-    "avg": 24.7,
-    "feels_like": 24.71,
-    "city": "Los Angeles",
-    "country": "US"
-  },
-  {
-    "min": 25.02,
-    "max": 25.02,
-    "avg": 25.02,
-    "feels_like": 26.03,
-    "city": "Belém",
-    "country": "BR"
-  },
-  {
-    "min": 7.86,
-    "max": 12.82,
-    "avg": 10.02,
-    "feels_like": 8.54,
-    "city": "Toronto",
-    "country": "CA"
-  },
-  {
-    "min": 21.2,
-    "max": 23.03,
-    "avg": 21.66,
-    "feels_like": 22.28,
-    "city": "São Paulo",
-    "country": "BR"
-  }
+ [
+   {
+     "min": 17.76,
+     "max": 31.44,
+     "avg": 24.7,
+     "feels_like": 24.71,
+     "city": "Los Angeles",
+     "country": "US"
+   },
+   {
+     "min": 25.02,
+     "max": 25.02,
+     "avg": 25.02,
+     "feels_like": 26.03,
+     "city": "Belém",
+     "country": "BR"
+   },
+   {
+     "min": 7.86,
+     "max": 12.82,
+     "avg": 10.02,
+     "feels_like": 8.54,
+     "city": "Toronto",
+     "country": "CA"
+   },
+   {
+     "min": 21.2,
+     "max": 23.03,
+     "avg": 21.66,
+     "feels_like": 22.28,
+     "city": "São Paulo",
+     "country": "BR"
+   }
 ]
   ```
 
