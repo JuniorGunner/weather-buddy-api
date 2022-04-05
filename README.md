@@ -95,7 +95,6 @@ It's the main interface of the application. It's responsible for providing the W
   This is the result for `http://localhost:5000/temperature?max=4`:
 
   ```json
- {
   [
    {
      "min": 17.76,
@@ -130,7 +129,6 @@ It's the main interface of the application. It's responsible for providing the W
      "country": "BR"
    }
  ]
-}
   ```
 
 ## For Developers
