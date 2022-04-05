@@ -92,7 +92,7 @@ It's the main interface of the application. It's responsible for providing the W
 
 - **Responses**
 
-  This is the result for `http://localhost:5000/temperature?max = 4`:
+  This is the result for `http://localhost:5000/temperature?max=4`:
 
   ```json
   [
