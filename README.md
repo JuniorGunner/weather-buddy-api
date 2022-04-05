@@ -128,7 +128,7 @@ It's the main interface of the application. It's responsible for providing the W
      "city": "São Paulo",
      "country": "BR"
    }
- ]
+  ]
   ```
 
 ## For Developers
